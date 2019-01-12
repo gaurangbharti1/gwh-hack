@@ -1,0 +1,142 @@
+<div class="container">
+    <div class="row center-align">
+        <div class="col s12">
+            <p class="flow-text white-text">Lecture Transcriber and Summarizer</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row">
+            <!--  <div ng-if="!summary"> -->
+            <div ng-class="!final_url ? 'col s8 offset-s2' : 'col s6'">
+                <div class="card grey darken-3">
+                    <div class="card-content white-text">
+                        <span class="card-title">Enter Youtube link to lecture below</span>
+                        <div class="row">
+                            <form class="col s12 white-text">
+
+                                <div class="input-field col s12 white-text">
+                                    <input id="video_url" type="text" class="validate" ng-model="video_url" class="white-text">
+                                    <label for="video_url" class="white-text">Video URL</label>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="card-action">
+                        <button id="downloadBtn" ng-click="summarizeVideo();" class="btn waves-effect black white-text">Summarize</button>
+                    </div>
+                </div>
+            </div>
+            <!--</div> -->
+            <div class="col s6">
+                <div ng-if="final_url">
+                    <div class="card grey darken-3">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <div class="video-container">
+                                <iframe width="420" height="315" ng-src="{{ final_url | trusted }}">
+</iframe></div>
+                        </div>
+                        <div class="card-content">
+                            <span ng-class="{'activator': !summaryloading }" class="card-title white-text">Video <div ng-if="summaryloading">Summarizing..</div><div ng-if="!summaryloading">Summarized</div><i class="material-icons right">more_vert</i></span>
+                            <div class="white-text" ng-if="summaryloading">
+                                <div class="preloader-wrapper small active">
+                                    <div class="spinner-layer spinner-blue-only">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="gap-patch">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Summarized Video<i class="material-icons right">close</i></span>
+                            <div ng-if="!summaryloading">
+                                <UL>
+                                    <li ng-repeat="item in summary">
+                                        <p class="flow=text">{{ item }}</p>
+                                    </li>
+                                </UL>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div ng-if="summary && !summaryloading">
+        <div class="row">
+            <div class="col s12 center-align">
+
+                <a class="waves-effect waves-light btn modal-trigger black white-text" href="#modal1">Full Transcription</a>
+            </div>
+        </div>
+        <!--     <a class="waves-effect waves-light btn">Full Transcription</a> -->
+
+
+    </div>
+    <div id="modal1" class="modal">
+        <div class="modal-content grey darken-3 z-depth-5">
+            <h4 class="white-text">Full Transcription</h4>
+            <div ng-repeat="para in transcription">
+                <p class="white-text">{{para}}</p>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div ng-if="summary && !summaryloading">
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div id="transcript" class="row">
+            <div class="col s8 offset-s2">
+                <div class="typewriter">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card grey darken-3">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Full Transcription</span>
+                                    <h5 class="white-text">{{transcription}}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="row">
+        <h2>Summary</h2>
+        <div ng-if="summaryloading">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-if="!summaryloading">
+            <ul>
+                <li ng-repeat="item in summary">
+                    {{ item }}
+                </li>
+            </ul>
+        </div>
+</div> -->
+</div>

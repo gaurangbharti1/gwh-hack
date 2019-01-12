@@ -1,5 +1,5 @@
 {
-  "name": "chat-example",
+  "name": "gwh-hack",
   "version": "0.0.0",
   "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
   "main": "server.js",
@@ -7,11 +7,19 @@
   "author": "Mostafa Eweda <mo.eweda@gmail.com>",
   "dependencies": {
     "@google-cloud/speech": "^2.1.2",
+    "@google-cloud/storage": "^2.3.4",
     "async": "~0.2.8",
+    "body-parser": "^1.18.3",
+    "child-process-promise": "^2.2.1",
+    "child_process": "^1.0.2",
+    "connect": "^3.6.5",
+    "cors": "^2.8.4",
     "express": "~3.2.4",
     "fluent-ffmpeg": "^2.1.2",
     "grpc": "^1.17.0",
     "socket.io": "~0.9.14",
+    "string_decoder": "^1.2.0",
+    "util": "^0.11.1",
     "ytdl-core": "^0.29.0"
   }
 }

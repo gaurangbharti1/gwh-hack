@@ -7,15 +7,16 @@ const client = new speech.SpeechClient();
 /**
  * TODO(developer): Uncomment the following lines before running the sample.
  */
- const gcsUri = 'gs://cryo-bucket/balloonVideo.flac';
- const encoding = 'FLAC';
+ const gcsUri = 'gs://cryo-bucket/minPhysics.wav';
+ const encoding = 'LINEAR16';
  const sampleRateHertz = 16000;
  const languageCode = 'en-US';
 
 const config = {
   encoding: encoding,
-  sampleRateHertz: sampleRateHertz,
+  //sampleRateHertz: sampleRateHertz,
   languageCode: languageCode,
+  enableAutomaticPunctuation : true
 };
 
 const audio = {
@@ -38,6 +39,8 @@ client
   })
   .then(data => {
     const response = data[0];
+    console.log(response.results)
+    //console.log(response.results.alternatives[0].transcript)
     const transcription = response.results
       .map(result => result.alternatives[0].transcript)
       .join('\n');
