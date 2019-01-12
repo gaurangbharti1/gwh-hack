@@ -1,0 +1,111 @@
+{
+  "name": "6630176839901252870",
+  "metadata": {
+    "@type": "type.googleapis.com/google.cloud.speech.v1.LongRunningRecognizeMetadata",
+    "progressPercent": 100,
+    "startTime": "2019-01-11T18:49:00.497232Z",
+    "lastUpdateTime": "2019-01-11T18:50:09.051925Z"
+  },
+  "done": true,
+  "response": {
+    "@type": "type.googleapis.com/google.cloud.speech.v1.LongRunningRecognizeResponse",
+    "results": [
+      {
+        "alternatives": [
+          {
+            "transcript": "this isn't a normal project by any means",
+            "confidence": 0.926047
+          }
+        ]
+      },
+      {
+        "alternatives": [
+          {
+            "transcript": " hands-on experience I've acquired throughout this project has been phenomenal",
+            "confidence": 0.9185042
+          }
+        ]
+      },
+      {
+        "alternatives": [
+          {
+            "transcript": " is there anyone",
+            "confidence": 0.8414186
+          }
+        ]
+      },
+      {
+        "alternatives": [
+          {
+            "transcript": " higher profit on that I didn't learn much of science department which focuses on ozone and why it's important to use only as it's in the stratosphere and act as a blanket she'll be home from UV radiation penetrating into the Earth's surface although it is very useful the diet inhalation of the Ozone gas is extremely hot however do to Industrial activities at the concentration of ozone in the lower layers of the atmosphere increased since we wanted to investigate this phenomenon",
+            "confidence": 0.946836
+          }
+        ]
+      },
+      {
+        "alternatives": [
+          {
+            "transcript": " hi I'm going and I use my passion for Structural Engineering to help this project I did this by Design the payload itself to design a load I have to make sure that the wind blow to the ozone and temperature sensors were perfect and that the circuitry Inside the Box itself was well insulated enough to be able to handle working at minus 80 degrees Celsius this was a really interesting talents to tackle and it helped me gain so amazing hands-on experience with Structural Engineering",
+            "confidence": 0.95433474
+          }
+        ]
+      },
+      {
+        "alternatives": [
+          {
+            "transcript": " hey I'm rhythmic I don't have many tasks on this project but I primarily dealt with being data analysis part and electronics part I wired all the components and I did extensive testing on them for the extreme conditions that I'm going to undergo I have known before but never to this extent though it was a really good learning experience for me",
+            "confidence": 0.95236254
+          }
+        ]
+      },
+      {
+        "alternatives": [
+          {
+            "transcript": " they don't know if this was another challenge in this task get involved free processing the data that we collected and using Advanced statistics and computer science to draw conclusions from that data",
+            "confidence": 0.9202399
+          }
+        ]
+      },
+      {
+        "alternatives": [
+          {
+            "transcript": " hello I am Yahoo and I was focusing too soft inside of this project so I had to make a program that would collect and store data from a census",
+            "confidence": 0.86794734
+          }
+        ]
+      },
+      {
+        "alternatives": [
+          {
+            "transcript": " about him Soccer Dome and I also work on trading books and testing a felony sentence using data in science",
+            "confidence": 0.79526055
+          }
+        ]
+      },
+      {
+        "alternatives": [
+          {
+            "transcript": " hello I am on my way as project manager to coordinate with everyone involved and manage my team",
+            "confidence": 0.8422844
+          }
+        ]
+      },
+      {
+        "alternatives": [
+          {
+            "transcript": " this is the kind of project I always wanted to do and then I found out the good that comes from analyzing ozone immediately phone to steam to help me about this this personally I walked in the mechanical aspects of the project and the data analysis",
+            "confidence": 0.92070967
+          }
+        ]
+      },
+      {
+        "alternatives": [
+          {
+            "transcript": " I'm naked. From SSID I meant to this team students International School of brilliant and then hungry to learn about astrophysics made them to take this project we have led them through all this project which took six months and it wouldn't have been possible without the support of Indian Institute of astrophysics and The Green Solution",
+            "confidence": 0.9481055
+          }
+        ]
+      }
+    ]
+  }
+}
